@@ -1,0 +1,20 @@
+#border {
+  display: inline-flex;
+  border: solid 2px black;
+  padding: 20px; 
+} 
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 400px;
+  width: 400px;
+  gap: 4px;
+}
+
+.box {
+  width: calc(200px - 2px);
+  height: 100px;
+  background-color: orangered;
+}
+

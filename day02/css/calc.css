@@ -1,0 +1,23 @@
+#view {
+  /* %, vh, vw, dvw, dvh(dynamic view height) */
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  height: 100vh;
+  background-color: gray;
+}
+/* #container{
+  최대 크기를 고정 
+   max-width 같은거
+  width: min(50%,500px);
+  height: 200px;
+  background-color: orange;
+} */
+
+#container{
+  width: max(50%,500px);
+  height: 200px;
+  background-color: orange;
+}
+
+
+/* min(), max() */

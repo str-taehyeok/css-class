@@ -1,0 +1,12 @@
+/* 
+  background image 넣을 시 주의사항
+  1) 요소의 크기가 지정되어야 한다.
+  2) 비율을 정확히 맞춰야 한다.
+  3) 이미지의 크기보다 컨텐츠 크기가 커지면 반복(repeat)가 된다.
+*/
+.image-wrapper {
+  padding-top: calc(100%/2141*3212);
+  background-image: url(../images/cat.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
