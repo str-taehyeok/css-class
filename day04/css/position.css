@@ -1,0 +1,23 @@
+  main{
+    position: relative;
+}
+
+.slide{
+  /* position: absolute; */
+  width: 100%;
+  height: 100vh;
+  margin: 4px;
+  background-color: darkgreen;
+}
+#slide-01{
+  /* z-index: 1; */
+}
+.circle{
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  border-radius: 50%;
+  bottom: 0;
+  right: 200px;
+}

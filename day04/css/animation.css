@@ -1,0 +1,32 @@
+.white{
+  width: 400px;
+  animation: white-move 2s forwards;
+}
+p {
+  animation: fade-in 1s;
+  font-size: 30px;
+}
+
+
+
+/* 애니메이션의 선언 */
+@keyframes white-move{
+  /* 1번 방법 */
+  from { transform: translate(0,0);}
+  to { transform: translate(1000px,0); } 
+}
+@keyframes fade-in {
+  /* 2번 방법 */
+  0%{
+    transform: translate(0,40px);
+    opacity: 0;
+  }
+  /* 50%{} */
+  100%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+
+
+}
+

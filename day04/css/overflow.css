@@ -1,0 +1,14 @@
+#container{
+  width: 300px;
+  height: 150px;
+  border: solid 3px orange;
+  /* overflow: hidden; */
+  overflow: auto;
+}
+
+.component{
+  width: 200px;
+  height: 200px;
+  margin: 4px;
+  background-color: teal;
+}

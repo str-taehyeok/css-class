@@ -19,7 +19,8 @@ input,select{vertical-align:middle}
 
 #content{
   display: block;
-  justify-content: right;
+  margin : 0 auto;
+  width: 1280px;
 }
 .product-title{
   display: block;

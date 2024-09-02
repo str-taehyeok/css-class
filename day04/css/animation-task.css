@@ -1,0 +1,50 @@
+.star{
+  width: 200px;
+  height: 200px;
+  animation: twinkle 1s infinite;
+}
+
+p {
+  font-size: 30px;
+  animation: down-up 2s forwards;
+}
+
+.circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: yellow;
+  animation: bounce 2s infinite;
+}
+
+
+
+@keyframes twinkle{
+  0%{
+    transform: translate(0,0);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+@keyframes down-up{
+  from { transform: translate(0 , 0);}
+  to { transform: translate(0 , -50px);}
+}
+
+@keyframes bounce{
+  0%{
+    transform: translate(0,0);
+    
+  }
+  50%{
+    transform: translate(0,50px);
+  }
+  100%{
+    transform: translate(0,-50px);
+    
+  }
+}

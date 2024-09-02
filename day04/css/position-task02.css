@@ -1,0 +1,34 @@
+#container {
+  position: relative;
+  width: 1000px;
+}
+
+#container .bg{
+  width: 1000px;
+}
+
+.circle {
+  position: absolute;
+  width: 80px;
+}
+
+.circle01 {
+  right: 23px;
+  bottom: 100px;
+}
+.circle02 {
+  right: 12px;
+  bottom: 10px;
+}
+.circle03 {
+  right: 235px;
+  bottom: 80px;
+}
+.circle04 {
+  right: 250px;
+  top: 59px;
+}
+.circle05 {
+  right: 406px;
+  bottom: 255px;
+}
