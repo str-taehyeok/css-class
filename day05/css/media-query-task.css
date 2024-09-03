@@ -1,0 +1,33 @@
+#container{
+  width: 100%;
+  height: 100vh;
+  border: solid 1px olive;
+}
+.ball {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+@keyframes left-right{
+  0% { transform: translate(0 , 0);}
+  50% {transform: translate(100px , 0);}
+  100% {transform: translate(0 , 0);}
+}
+@keyframes up-down{
+  0% { transform: translate(0 , 0);}
+  50% {transform: translate(0 , 100px);}
+  100% {transform: translate(0 , 0);}
+}
+
+@media screen and (min-width:345px) and (max-width:767px){
+  .ball{
+    animation: up-down 2s infinite;
+  }
+}
+@media screen and (min-width:1280px) {
+  .ball{
+    animation: left-right 2s infinite;
+  }
+}

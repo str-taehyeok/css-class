@@ -1,12 +1,13 @@
-.star{
+.star1{
   width: 200px;
   height: 200px;
-  animation: twinkle 1s infinite;
+  /* animation : 이름 초 횟수 몇초뒤에(delay) transition */
+  animation: twinkle 0.1s infinite 5s;
 }
 
 p {
   font-size: 30px;
-  animation: down-up 2s forwards;
+  animation: down-up 0.5s forwards;
 }
 
 .circle{
@@ -14,18 +15,43 @@ p {
   height: 200px;
   border-radius: 50%;
   background-color: yellow;
-  animation: bounce 2s infinite;
+  animation: bounce 0.5s infinite;
 }
 
+.star2{
+  width: 200px;
+  height: 200px;
+  animation: big 0.1s infinite;
+}
 
+.box-container .box{
+  width: 100px;
+  height: 100px;
+  border: solid 2px black;
+  margin: 0 4px;
+}
+.box-container{
+  display: flex;
+}
+
+.box-container :nth-child(1) {
+  animation: bounce-sequence 0.5s;
+}
+.box-container :nth-child(2) {
+  animation: bounce-sequence 1s;
+}
+.box-container :nth-child(3) {
+  animation: bounce-sequence 1.5s;
+}
+.box-container :nth-child(4) {
+  animation: bounce-sequence 2s;
+}
 
 @keyframes twinkle{
   0%{
-    transform: translate(0,0);
     opacity: 0;
   }
   100%{
-    transform: translate(0,0);
     opacity: 1;
   }
 }
@@ -35,16 +61,38 @@ p {
   to { transform: translate(0 , -50px);}
 }
 
-@keyframes bounce{
-  0%{
+@keyframes bounce {
+  0% {
     transform: translate(0,0);
-    
   }
-  50%{
-    transform: translate(0,50px);
+  50% {
+    transform: translate(0, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes big{ 
+  0%{
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
   }
   100%{
-    transform: translate(0,-50px);
-    
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce-sequence{
+  0% {
+    transform: translate(0,0);
+  }
+  50% {
+    transform: translate(0, -50px);
+  }
+  100% {
+    transform: translate(0,0);
   }
 }
