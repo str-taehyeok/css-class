@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://st.kakaocdn.net/shoppingstore/static/common/store/shopping_32x32.ico">
-  <link rel="stylesheet" href="./css/kakao.css">
+  <link rel="stylesheet" href="./css/kakao-tms.css">
   <title>카카오프렌즈 | 카카오톡 쇼핑하기</title>
 </head>
 <body>
@@ -13,33 +13,36 @@
     <div id="nav-border">
       <div id="nav">
         <div class="left">
-          <img src="https://st.kakaocdn.net/commerce_ui/front-talkstore/real/20240828/152452/assets/images/pc/pc_logo_231212.png" alt="로고">
+          <a href="https://store.kakao.com/">
+            <img src="https://st.kakaocdn.net/commerce_ui/front-talkstore/real/20240828/152452/assets/images/pc/pc_logo_231212.png" alt="로고">
+          </a>
         </div>
         <div class="right">
           <div class="icons">
-            <img src="./icons/search.png" alt="검색">
-            <img src="./icons/delivery.png" alt="배송">
-            <img src="./icons/cart.png" alt="카트">
+            <img src="./image/검색.png" alt="검색">
+            <img src="./image/배송.png" alt="배송">
+            <img src="./image/카트.png" alt="카트">
           </div>
           <div class="sector">|</div>
           <div class="login">
-            <a href="#">로그인</a>
+            <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fshopping-userauth-web.kakao.com%252Fcallback%26state%3DeyJyZWRpcmVjdFVybCI6Imh0dHBzOi8vc3RvcmUua2FrYW8uY29tL2tha2FvZnJpZW5kcyIsImNoYW5uZWwiOiJTVE9SRSJ9%26through_account%3Dtrue%26client_id%3D98020c3772c56cf7faa6aceb97b0722d#login">로그인</a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- 헤더 로고 영역 -->
-    <div id="header">
+    <div id="kakao-header">
       <div class="logo-wrap">
         <img class="logo-main" src="https://st.kakaocdn.net/shoppingstore/store/20240802104502_5833379c29ad4abe88fed8cc227e84c8.jpg" alt="메인로고">
         <p>ⓘ 스토어정보</p>
       </div>
-      <div id="category-wrap">
+      <div class="category-wrap">
         <div class="category">
           <ul>
             <li class="category-menu">홈</li>
             <li class="category-menu">베스트</li>
+            <li class="category-menu">역시즌 세일</li>
             <li class="category-menu">베이비춘식이</li>
             <li class="category-menu">카테고리</li>
             <li class="category-menu">기획적</li>
@@ -48,14 +51,18 @@
         </div>
         <div class="search">
           <input type="text" placeholder="카카오프렌즈 상품 검색">
-          <img src="./icons/search.png" alt="검색">
+          <img src="./image/검색.png" alt="검색">
         </div>
       </div>
     </div>
 
     <!-- 배너 영역 -->
     <div id="banner">
-      <img src="https://st.kakaocdn.net/shoppingstore/store/home/brand/20240819111421_19526ccb73eb4a598fad34ac762335dc.jpg" alt="배너">
+      <img src="https://st.kakaocdn.net/shoppingstore/store/home/brand/20240906095143_6b239729f1d74b66984d1858be101a62.jpg" alt="배너">
+      <div class="button">
+        <button type="button" class="prev"><span class="ico_store"><img src="./image/prev.png" alt="이전"></span></button>
+        <button type="button" class="next"><span class="ico_store"></span><img src="./image/next.png" alt="다음"></span></button>
+      </div>
     </div>
 
     <!-- 컨텐츠 영역 -->
@@ -70,8 +77,7 @@
               <p class="product-title">보행기 인형_베이비춘식이</p>
               <strong class="price">19,000원</strong>
               <div class="review-wrap">
-                <img src="./icons/star.png" alt="별">
-                <span class="review">리뷰 3</span>
+                <span class="review">⭐리뷰 3</span>
               </div>
               <span class="sold">구매 180</span>
             </div>
@@ -82,8 +88,7 @@
               <p class="product-title"> 애착쿠션 인형_베이비춘식이</p>
               <strong class="price">19,000원</strong>
               <div class="review-wrap">
-                <img src="./icons/star.png" alt="별">
-                <span class="review">리뷰 2</span>
+                <span class="review">⭐리뷰 2</span>
               </div>
               <span class="sold">구매 138</span>
             </div>
@@ -94,8 +99,7 @@
               <p class="product-title"> 피규어 주차번호판_베이비춘식이</p>
               <strong class="price">16,000원</strong>
               <div class="review-wrap">
-                <img src="./icons/star.png" alt="별">
-                <span class="review">리뷰 4</span>
+                <span class="review">⭐리뷰 4</span>
               </div>
               <span class="sold">구매 92</span>
             </div>
@@ -106,8 +110,7 @@
               <p class="product-title">보행기 인형_베이비춘식이</p>
               <strong class="price">19,000원</strong>
               <div class="review-wrap">
-                <img src="./icons/star.png" alt="별">
-                <span class="review">리뷰 3</span>
+                <span class="review">⭐리뷰 3</span>
               </div>
               <span class="sold">구매 180</span>
             </div>
@@ -118,8 +121,7 @@
               <p class="product-title"> 피규어 주차번호판_리틀라이언</p>
               <strong class="price">14,000원</strong>
               <div class="review-wrap">
-                <img src="./icons/star.png" alt="별">
-                <span class="review">리뷰 1</span>
+                <span class="review">⭐리뷰 1</span>
               </div>
               <span class="sold">구매 93</span>
             </div>
@@ -130,8 +132,7 @@
               <p class="product-title">훌라후프 차량용 방향제</p>
               <strong class="price">15,000원</strong>
               <div class="review-wrap">
-                <img src="./icons/star.png" alt="별">
-                <span class="review">리뷰 1</span>
+                <span class="review">⭐리뷰 1</span>
               </div>
               <span class="sold">구매 178</span>
             </div>
@@ -196,8 +197,7 @@
                 <p class="best-title">프렌즈 그린라이프 노트(블루)_춘식이</p>
                 <strong class="price">4,000원</strong>
                 <div class="review-wrap">
-                  <img src="./icons/star.png" alt="별">
-                  <span class="review">리뷰 1</span>
+                  <span class="review">⭐리뷰 1</span>
                 </div>
                 <span class="sold">구매 332</span>
               </div>
@@ -210,8 +210,7 @@
                 <p class="best-title">냥냥고양이 안전벨트커버_춘식이</p>
                 <strong class="price">14,000원</strong>
                 <div class="review-wrap">
-                  <img src="./icons/star.png" alt="별">
-                  <span class="review">리뷰 77</span>
+                  <span class="review">⭐리뷰 77</span>
                 </div>
                 <span class="sold">구매 2,920</span>
               </div>
@@ -224,8 +223,7 @@
                 <p class="best-title">아기고양이 안전벨트 커버_춘식이</p>
                 <strong class="price">14,000원</strong>
                 <div class="review-wrap">
-                  <img src="./icons/star.png" alt="별">
-                  <span class="review">리뷰 21</span>
+                  <span class="review">⭐리뷰 21</span>
                 </div>
                 <span class="sold">구매 1,578</span>
               </div>
@@ -238,8 +236,7 @@
                 <p class="best-title">양치컵&스탠드_춘식이</p>
                 <strong class="price">19,000원</strong>
                 <div class="review-wrap">
-                  <img src="./icons/star.png" alt="별">
-                  <span class="review">리뷰 9</span>
+                  <span class="review">⭐리뷰 9</span>
                 </div>
                 <span class="sold">구매 340</span>
               </div>
@@ -252,8 +249,7 @@
                 <p class="best-title">훌라후프 차량용 방향제_베이비춘식이</p>
                 <strong class="price">15,000원</strong>
                 <div class="review-wrap">
-                  <img src="./icons/star.png" alt="별">
-                  <span class="review">리뷰 1</span>
+                  <span class="review">⭐리뷰 1</span>
                 </div>
                 <span class="sold">구매 178</span>
               </div>
